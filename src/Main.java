@@ -10,6 +10,22 @@ public class Main {
                 System.out.println(" Сегодня пятница " + i + " -е число ");
         }
         System.out.println("Задача 2");
+        int marathonDistances = 42195;
+        int distances = 0;
+        do {
+            System.out.println("Держитесь! Осталось " + marathonDistances + " метров ");
+            marathonDistances = marathonDistances - 500;
+            System.out.println("вы прошли " + distances);
+            distances = distances + 500;
+        } while (marathonDistances >= 0);
+//
+        int meter = 500;
+        int distancesA = 42195;
+        for (int i = 0; i <= 42195; i = i + 500){
+            distancesA = distancesA - meter;
+            System.out.println("Держитесь! Осталось " + distancesA + " метров ");
+            System.out.println("вы прошли " + i);
+        }
 
     }
-}
+    }
