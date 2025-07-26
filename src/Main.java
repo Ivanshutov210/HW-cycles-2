@@ -21,11 +21,29 @@ public class Main {
 //
         int meter = 500;
         int distancesA = 42195;
-        for (int i = 0; i <= 42195; i = i + 500){
+        for (int i = 0; i <= 42195; i = i + 500) {
             distancesA = distancesA - meter;
             System.out.println("Держитесь! Осталось " + distancesA + " метров ");
             System.out.println("вы прошли " + i);
         }
+        System.out.println("Задача 3");
+        int days = 30;
+        int budget = 2000;
+        while (days > 0) {
+            days = days - 1;
+            if (days % 5 == 0) {
+                continue;
+            }
+            System.out.println(" Сегодня " + days + " число ");
+            budget = budget - 100;
+            System.out.println(" Остаток бюджета "+ budget);
+            if (budget == 0) {
+                break;
+        }
+    }
+}}
 
-    }
-    }
+
+
+
+
