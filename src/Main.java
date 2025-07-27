@@ -81,7 +81,7 @@ public class Main {
                 System.out.println(" Случился перегрев " + overheats);
                 continue;
             }
-            System.out.println("Заряд" + charge + "%");
+            System.out.println("Заряд" + charge + "% ");
             if (overheats == 3) {
                 break;
             }
