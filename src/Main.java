@@ -86,7 +86,7 @@ public class Main {
                 break;
             }
         }
-        System.out.println(" Зарядка прекращена. Текущий заряд "+ charge +" % ");
+        System.out.println(" Зарядка прекращена. Текущий заряд "+ charge +" %");
     }
 }
 
