@@ -61,9 +61,32 @@ public class Main {
             month++;
             if (month % 6 == 0) {
                 total = total * 1.07;
+                if (total >= 12_000_000)
+                    break;
             }
             System.out.println(" Месяц " + month + " Сумма " + total);
         }
+        System.out.println("Задача 5");
+
+        int charge = 20;
+        int minute = 0;
+        int overheats = 0;
+
+        while (charge < 100 && overheats <= 3) {
+            minute++;
+            charge = charge + 2;
+            if (minute % 10 == 0) {
+                overheats++;
+                minute += 2;
+                System.out.println(" Случился перегрев " + overheats);
+                continue;
+            }
+            System.out.println("Заряд" + charge + "%");
+            if (overheats == 3) {
+                break;
+            }
+        }
+        System.out.println(" Зарядка прекращена. Текущий заряд "+ charge +" % ");
     }
 }
 
