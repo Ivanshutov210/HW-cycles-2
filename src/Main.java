@@ -41,21 +41,42 @@ public class Main {
                 break;
             }
         }
-            int budgetA = 1600;
-            for (int i = 0; i <= 30; i = i + 1) {
-                if (i % 5 == 0) {
-                    continue;
-                }
-                budgetA = budgetA - 100 ;
-                if (budget == 0) {
-                    break;
-                }
-                System.out.println(" Сегодня " + i + " число ");
-                System.out.println(" Остаток бюджета " + budgetA);
+        int budgetA = 1600;
+        for (int i = 0; i <= 30; i = i + 1) {
+            if (i % 5 == 0) {
+                continue;
             }
-
+            budgetA = budgetA - 100;
+            if (budget == 0) {
+                break;
+            }
+            System.out.println(" Сегодня " + i + " число ");
+            System.out.println(" Остаток бюджета " + budgetA);
         }
+        System.out.println("Задача 4");
+        int month = 0;
+        double total = 0;
+        while (total < 12_000_000) {
+            total = total + total / 100;
+            total = total + 15000;
+            month++;
+            if (month % 6 == 0) {
+                total = total * 1.07;
+                if (total == 0)
+                    break;
+                System.out.println(" Месяц " + month + " Сумма " + total);
+            }
+        }
+
+        System.out.println("Задача 5");
+        int charge = 20;
+        int minute = 0;
+        int overheats = 0;
+
     }
+}
+
+
 
 
 
