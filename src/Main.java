@@ -27,21 +27,36 @@ public class Main {
             System.out.println("вы прошли " + i);
         }
         System.out.println("Задача 3");
-        int days = 30;
-        int budget = 2000;
-        while (days > 0) {
-            days = days - 1;
+        int days = 0;
+        int budget = 1600;
+        while (days >= 0) {
+            days++;
             if (days % 5 == 0) {
                 continue;
             }
             System.out.println(" Сегодня " + days + " число ");
             budget = budget - 100;
-            System.out.println(" Остаток бюджета "+ budget);
+            System.out.println(" Остаток бюджета " + budget);
             if (budget == 0) {
                 break;
+            }
+        }
+            int budgetA = 1600;
+            for (int i = 0; i <= 30; i = i + 1) {
+                if (i % 5 == 0) {
+                    continue;
+                }
+                budgetA = budgetA - 100 ;
+                if (budget == 0) {
+                    break;
+                }
+                System.out.println(" Сегодня " + i + " число ");
+                System.out.println(" Остаток бюджета " + budgetA);
+            }
+
         }
     }
-}}
+
 
 
 
